@@ -462,6 +462,18 @@ h1.homepage{
     /* background-color: coral; TEST COLOUR */
   }
 
+  .flexContainerBodyResume {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start; 
+    padding: 20px;
+    /* background-color: coral; TEST COLOUR  */
+  }
+
+ div .resume {
+    flex-grow:1;
+    flex-wrap: wrap;
+  }
 
   .flexContainerFooter {
     display: flex;
