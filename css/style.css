@@ -62,8 +62,8 @@ header {
 .contentBannerA {
     grid-area: contentBannerA;
     display: flex;
-    flex-wrap: row;
-    flex-direction: nowrap;
+    flex-wrap: nowrap;
+    flex-direction: row;
     align-items:flex-start;
     justify-content: flex-start;
 }
@@ -71,8 +71,8 @@ header {
 .contentBannerB {
     grid-area: contentBannerB;
     display: flex;
-    flex-wrap: row;
-    flex-direction: nowrap;
+    flex-wrap: nowrap;
+    flex-direction: row;
     align-items:flex-start;
     justify-content: flex-start;
 }
@@ -128,7 +128,6 @@ header {
     background-color: var(--mainBackgroud);
     align-items: flex-start;
     justify-content: flex-start;
-    width: 70%;
 }
 
 /* Footer Grid Areas  */
@@ -519,7 +518,7 @@ h1.homepage{
         /* same padding as .header and primaryNavHeader */
     }
 
-    section.contentBannerA {
+    .contentBannerA {
         grid-area: contentBannerA;
         flex-flow: row wrap;
         display: flex;
@@ -527,7 +526,7 @@ h1.homepage{
         align-items: flex-start;
     }
 
-    section.contentBannerB {
+    .contentBannerB {
         grid-area: contentBannerB;
         flex-flow: row wrap;
         display: flex;
