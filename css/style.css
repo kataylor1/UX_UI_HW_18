@@ -501,8 +501,8 @@ h1.homepage{
   /* media queries go at end off css */
   @media only screen and (max-width: 600px) {
     body {
-      background-color: lightblue;
-      /* this colour is for testing only */
+      /* background-color: lightblue;
+      this colour is for testing only */
     }
     header {
         grid-area: header;
@@ -537,6 +537,8 @@ h1.homepage{
         color: var(--mainFontColor);
         background-color: var(--mainBackgroud);
         width: 70%;
+        align-items: flex-start;
+        justify-content: flex-start;
     }
 
     footer {
