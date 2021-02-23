@@ -29,7 +29,7 @@ main {
     grid-template-areas:
         "header header"
         "contentBannerA contentBannerA"
-        "contentBannerB contentBannerB" 
+        "contentBannerB contentBannerB"
         "introText introText"
         "footer footer";
     /* background-color: #CC0000; test colour for troubleshooting */
@@ -59,75 +59,76 @@ header {
     /* same padding as .header and primaryNavHeader */
 }
 
-section .contentBannerA {
+.contentBannerA {
     grid-area: contentBannerA;
-    flex-flow: row nowrap;
     display: flex;
-    align-items: stretch;
+    flex-wrap: row;
+    flex-direction: nowrap;
+    align-items:flex-start;
     justify-content: flex-start;
 }
 
-section .contentBannerB {
+.contentBannerB {
     grid-area: contentBannerB;
-    flex-flow: row nowrap;
     display: flex;
-    align-items: stretch;
+    flex-wrap: row;
+    flex-direction: nowrap;
+    align-items:flex-start;
     justify-content: flex-start;
 }
 
 /* Banners Grid Area  */
 .contentBanner1 {
     background-color: var(--portfolio1Bg);
-    display: flex; 
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: center;
+    display: flex;
+    flex-wrap: row;
+    flex-direction: nowrap;
+    align-items:flex-start;
+    justify-content: space-between;
+    height: 1fr;
+    padding: 20px;
 }
 
 .contentBanner2 {
     background-color: var(--portfolio2Bg);
-    display: flex; 
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: center;
+    display: flex;
+    flex-wrap: row;
+    flex-direction: nowrap;
+    align-items:flex-start;
+    justify-content: space-between;
+    height: 1fr;
+    padding: 20px;
 }
 .contentBanner3 {
     background-color: var(--portfolio3Bg);
-    display: flex; 
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: center;
+    display: flex;
+    flex-wrap: row;
+    flex-direction: nowrap;
+    align-items:flex-start;
+    justify-content: space-between;
+    height: 1fr;
+    padding: 20px;
 }
 .contentBanner4 {
     background-color: var(--portfolio4Bg);
-    display: flex; 
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.contentBanner {
-    display: flex; 
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.contentBanner > div {
-    /* background-color: coral; */
-    padding: 20px;
     display: flex;
-    flex-flow: row wrap;
+    flex-wrap: row;
+    flex-direction: nowrap;
+    align-items:flex-start;
+    justify-content: space-between;
+    height: 1fr;
+    padding: 20px;
 }
+
 
 /* Intro Text Grid Areas */
-section .introText {
+.introText {
     grid-area: introText;
     color: var(--mainFontColor);
     background-color: var(--mainBackgroud);
-    width: 70%;
     align-items: flex-start;
     justify-content: flex-start;
+    width: 70%;
 }
 
 /* Footer Grid Areas  */
@@ -404,6 +405,7 @@ a.email:active {
 .contentBannerText {
     color: var(--mainFontColor);
     text-align: left;
+    padding: 20px;
 }
 
 
